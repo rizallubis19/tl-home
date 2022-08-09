@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
     <title>Telusur Langkah - Home</title>
     <link rel="stylesheet" href="css/style2.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script src="https://kit.fontawesome.com/61720f13e2.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -20,373 +17,501 @@
     <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
-</head>
-<body>
+    <!-- ------------------------------------------- -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/min/tiny-slider.js"></script>
+    <link rel="stylesheet" href="file:///E:/fontawesome/css/all.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="file:///E:/jquery.js"></script>
+  </head>
+  <body>
     <!-- NAVIGASI -->
-    <nav id="navBar" class="navbar-white">
-        <a href="index2.html"><img src="img/logo.png" class="logo" alt=""></a>
-        <ul class="nav-links">
-            <li><a href="#" class="home">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="destinasi.html">Destinasi Pilihan</a></li>
-            <li><a href="listing.html">Katalog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <a href="booking.html" class="register-btn">Booking Now</a>
-        <i class="fa fa-bars" onclick="togglebtn()"></i>
+    <nav>
+      <div class="logo"><img src="img/newlogo.png" alt="Logo"></div>
+      <div class="titles"><h3>Telusur Langkah</h3></div>
+      <label for="btn" class="icon">
+        <span class="fa fa-bars"></span>
+      </label>
+      <input type="checkbox" id="btn">
+      <ul>
+        <li><a href="#" class="active-page">Home</a></li>
+        <li>
+          <label for="btn-1" class="show">About Us +</label>
+          <a href="#">About +</a>
+          <input type="checkbox" id="btn-1">
+          <ul>
+            <li><a href="about.html">Telusur</a></li>
+            <li><a href="team.html">Team</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+          </ul>
+        </li>
+        <li><a href="destinasi.html">Destinasi</a></li>
+        <li>
+          <label for="btn-2" class="show">Event +</label>
+          <a href="#">Event +</a>
+          <input type="checkbox" id="btn-2">
+          <ul>
+            <li><a href="calender.html">Calender</a></li>
+            <li><a href="#">Kegiatan</a></li>
+            <li>
+              <label for="btn-3" class="show">More +</label>
+              <a href="#">More <span class="fa fa-plus"></span></a>
+              <input type="checkbox" id="btn-3">
+              <ul>
+                <li><a href="#">Submenu-1</a></li>
+                <li><a href="#">Submenu-2</a></li>
+                <li><a href="#">Submenu-3</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="listing.html">Katalog</a></li>
+        <li><a href="booking.html">Contact</a></li>
+      </ul>
     </nav>
-
-     <!-- HEADER SLIDER -->
-    <div class="slideshow-container">
-        <!-- slide 1 -->
-        <div class="mySlides fade">
-            <img src="img/1.jpg" style="width: 100%;" alt="" class="img">
-            <div class="container-search">
-                <h1>Telusur Langkah</h1>
-                <h2>Find Your Next Wonderful Journey</h2>
-                <div class="search-bar">
-                    <form >
-                        <div class="location-input">
-                            <label>Location</label>
-                            <input type="text" placeholder="4 Destinasi Utama">
-                        </div>
-                        <div>
-                            <label>Date</label>
-                            <input type="text" placeholder="2 Kali Perbulan">
-                        </div>
-                        <div>
-                            <label>People</label>
-                            <input type="text" placeholder="Dengan 50+ Pelancong">
-                        </div>
-                        <div>
-                            <label>Day</label>
-                            <input type="text" placeholder="Sabtu dan Minggu + Private time">
-                        </div>
-                        <button type="submit"><img src="img/travel.webp" alt="" width="50px" ></button>
-                    </form>
-                </div>
+    <!-- Akhir Navigasi -->
+    <!-- --------------------------------------------------------------------- -->
+    <!-- HEADER SLIDE -->
+    <div class="header-slide">
+        <div class="img-slider">
+            <div class="slides active">
+            <img src="img/header1.jpg" alt="">
+            <div class="info">
+                <h2 class="header-judul">Pulau Samosir</h2>
+                <p>Keindahan Pulau di tengah-tengah danau vulkanik dengan sejuta pesona dan keindahan alam. <br> Toba, Sumatera Utara, Indonesia</p>
+            </div>
+            </div>
+            <div class="slides">
+            <img src="img/header2.jpg" alt="">
+            <div class="info">
+                <h2 class="header-judul">Pulau Pandang</h2>
+                <p>Pulau dengan pantai pasir putih yang sangat elok yang berbatasan dengan selat Malaka. <br>Batubara, Sumatera Utara, Indonesia</p>
+            </div>
+            </div>
+            <div class="slides">
+            <img src="img/header3.jpg" alt="">
+            <div class="info">
+                <h2 class="header-judul">Pulau Kalimantung</h2>
+                <p>Terletak di Pulau Mursala memiliki air laut yang jernih kebiruan terhampar sekitar satu hektar. <br> Tapanuli Tengah, Sumatera Utara, Indonesia</p>
+            </div>
+            </div>
+            <div class="slides">
+            <img src="img/header4.jpg" alt="">
+            <div class="info">
+                <h2 class="header-judul">Air Terjun Eifrata, Samosir</h2>
+                <p>Air terjun yang langsung mengarah ke danau di kelilingi bukit yang sangat elok. <br> Samosir, Sumatera Utara, Indonesia</p>
+            </div>
+            </div>
+            <div class="slides">
+            <img src="img/header5.JPG" alt="">
+            <div class="info">
+                <h2 class="header-judul">Pulau Banyak</h2>
+                <p>Destinasi dengan jumlah 7000 lebih pulau kecil, dengan pemandangan pantai pasir putih yang sangat memukau. <br> Aceh Singkil, Indonesia</p>
+            </div>
+            </div>
+            <div class="navigation">
+            <div class="btn active"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
+            <div class="btn"></div>
             </div>
         </div>
-        <!-- slide 2 -->
-        <div class="mySlides fade">
-            <img src="img/2.jpg" style="width: 100%;" alt="" class="img">
-            <div class="container-search">
-                <h1>Telusur Langkah</h1>
-                <h2>Find Your Next Wonderful Journey</h2>
-                <div class="search-bar">
-                    <form >
-                        <div class="location-input">
-                            <label>Location</label>
-                            <input type="text" placeholder="4 Destinasi Utama">
-                        </div>
-                        <div>
-                            <label>Date</label>
-                            <input type="text" placeholder="2 Kali Perbulan">
-                        </div>
-                        <div>
-                            <label>People</label>
-                            <input type="text" placeholder="Dengan 50+ Pelancong">
-                        </div>
-                        <div>
-                            <label>Day</label>
-                            <input type="text" placeholder="Sabtu dan Minggu + Private time">
-                        </div>
-                        <button type="submit"><img src="img/travel.webp" alt="" width="50px"></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        <!-- slide 3 -->
-        <div class="mySlides fade">
-            <img src="img/3.jpg" style="width: 100%;" alt="" class="img">
-            <div class="container-search">
-                <h1>Telusur Langkah</h1>
-                <h2>Find Your Next Wonderful Journey</h2>
-                <div class="search-bar">
-                    <form >
-                        <div class="location-input">
-                            <label>Location</label>
-                            <input type="text" placeholder="4 Destinasi Utama">
-                        </div>
-                        <div>
-                            <label>Date</label>
-                            <input type="text" placeholder="2 Kali trip Perbulan">
-                        </div>
-                        <div>
-                            <label>People</label>
-                            <input type="text" placeholder="Dengan 50+ Pelancong">
-                        </div>
-                        <div>
-                            <label>Day</label>
-                            <input type="text" placeholder="Sabtu-Minggu + Private time">
-                        </div>
-                        <button type="submit"><img src="img/travel.webp" alt="" width="50px"></button>
-                    </form>
-                </div>
-            </div>
-        </div>
-        
-        <a class="prev" onclick="plusSlides(-1)">&#10094</a>
-        <a class="next" onclick="plusSlides(1)">&#10095</a>
-
-    </div>
-    
-    <br>
-    <div style="text-align: center;">
-        <span class="dot" onclick="currentSlides(1)"></span>
-        <span class="dot" onclick="currentSlides(2)"></span>
-        <span class="dot" onclick="currentSlides(3)"></span>
-    </div>
-    <!-- ------------------------Akhir slide------------------------- -->
-    
-    <!-- Container -->
-    <div class="container">
-    <!-- Opening -->
-    <div class="about-msg">
-        <h3 class="sub-title">About Telusur Langkah</h3>
-        <h2>Eksplor Gunung, Hutan, dan Laut Sumatera </h2> 
-        <p>Langkah adalah Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum cumque culpa maxime fuga ex ea eius fugit quis, mollitia fugiat, obcaecati dolore voluptatem beatae? Eaque atque vitae iusto unde odio. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit, quas modi molestias non et voluptatibus? Qui expedita temporibus delectus laboriosam voluptatum dolores fugit aperiam eveniet ducimus? Natus possimus perferendis beatae.</p> <br> <br>
-        <a href="about.html" class="cta-btn">Know More</a> <br> <br>
-        <hr>
-    </div>
-
-      <!-- EXCLUSIVE SECTION -->
-        <h2 class="sub-title">  Gallery</h2>
-        <div class="gallery-home">
-            <div>
-                <img src="img/23.jpg" alt="">
-                <span>
-                    <h4>Langkat</h4>
-                </span>
-            </div>
-            <div>
-                <img src="img/25.jpg" alt="">
-                <span>
-                    <h4>Bali</h4>
-                </span>
-            </div>
-            <div>
-                <img src="img/26.jpg" alt="">
-                <span>
-                    <h4>Aceh</h4>
-                </span>
-            </div>
-            <div>
-                <img src="img/9.jpg" alt="">
-                <span>
-                    <h4>Samosir</h4>
-                </span>
-            </div>
-            <div>
-                <img src="img/19.jpg" alt="">
-                <span>
-                    <h4>Pulau Banyak</h4>
-                </span>
-            </div>
-            <div>
-                <img src="img/20.jpg" alt="">
-                <span>
-                    <h4>Padang</h4>
-                </span>
-            </div>
-            <div>
-                <img src="img/21.jpg" alt="">
-                <span>
-                    <h4>Toba</h4>
-                </span>
-            </div>
-            <div>
-                <img src="img/22.jpg" alt="">
-                <span>
-                    <h4>Brastagi</h4>
-                </span>
-            </div>
-        </div>
-
-        <!-- SUPPORT SECTION -->
-        <section class="abuabu" id="support">
-            <div class="layar-dalam support">
-                <div>
-                    <img src="asset/matahari.png" />
-                    <h6>Siap Disetiap Kondisi</h6>
-                    <p>
-                        Siap Melayani Pelancong di setiap kondisi, sesuai dengan permintaan, dan menjelajah wisata alam seperti sungai, air terjun, dan daerah pegunungan.
-                    </p>
-                </div>
-                <div>
-                    <img src="asset/compas.png" />
-                    <h6>Guide Berpengalaman</h6>
-                    <p>
-                        Memiliki pemandu wisata berpengalaman dan pastinya pengetahuan tentang destinasi sehingga memastikan pelancong puas.dengan peralatan dan prasarana pendukung yang lengkap untuk membuat trip yang nyaman dan aman.
-                    </p>
-                </div>
-                <div>
-                    <img src="asset/bag.webp" />
-                    <h6>Prasarana yang Lengkap</h6>
-                    <p>
-                        Memastikan kelancaran trip dengan peralatan dan prasarana pendukung yang lengkap untuk membuat pelancong mendapatkan pengalaman liburan yang nyaman dan aman.
-                    </p>
-                </div>                    
-            </div>
-        </section>
-
-        <!-- TRENDING PLACE -->
-        <h2 class="sub-title">Trending Places</h2>
-        <div class="trending">
-            <div>
-                <img src="img/12.JPG" alt="">
-                <h3>Pulau Banyak</h3>
-            </div>
-            <div>
-                <img src="img/13.JPG" alt="">
-                <h3>Pulau Kalimuntung</h3>
-            </div>
-            <div>
-                <img src="img/15.jpg" alt="">
-                <h3>Pulau Samosir</h3>
-            </div>
-            <div>
-                <img src="img/11.jpg" alt="">
-                <h3>Pulau Pandang</h3>
-            </div>
-        </div>
-
-        <!-- TEAM SECTION -->
-        <div class="cta">
-            <h3>Our Profesional Team</h3>
-            <p>Team Kami adalah orang-orang berpengalaman dengan pengetahuan wisata yang terjamin dan siap memberikan pelayanan terbaik untuk pelancong.</p>
-            <a href="team.html" class="cta-btn">Know More</a>
-        </div>
-
-        <!-- TRAVELLERS STORY -->
-        <h2 class="sub-title">Travellers Stories</h2>
-        <div class="stories">
-            <div>
-                <img src="img/14.JPG" alt="">
-                <p>"Jangan pikir 2 kali untuk liburan, Just do it!"</p>
-            </div>
-            <div>
-                <img src="img/16.jpg" alt="">
-                <p>"Saya tidak lagi sama, setelah melihat senja di belahan bumi lain"</p>
-            </div>
-            <div>
-                <img src="img/27.jpg" alt="">
-                <p>"Cara terbaik mengukur sebuah perjalanan adalah teman bukan jarak"</p>
-            </div>
-        </div>
-        <a href="booking.html" class="start-btn">Start Your Journey Now</a>
-
-        <!-- Quotes -->
-        <div class="about-msg">
-            <h2>Quotes of Your Journey</h2>
-            <p>“<span class="auto-input"></span>”</p>
-            <p>“The journey not the arrival matters.” – T. S. Elio</p> <br>
-            <p>Traveling itu bukan masalah akhir dari perjalananmu, melainkan proses dalam petualanganmu itu sendiri. Hanya kamu yang bisa memaknai sendiri setiap perjalananmu.</p>
-        </div>
-
-         <!-- Testimonials -->
-         <section class="abuabu" id="blog">
-            <div class="layar-dalam">
-                <h3 class="sub-title">Testimonials</h3>
-                <p class="ringkasan">Testimonial dari beberapa Traveller</p>
-                <div class="testimonials">
-                    <div class="row">
-                        <div class="testimonials-col">
-                            <img src="asset/tim3.jpeg" alt="">
-                            <div>
-                                <p><i class="fa-solid fa-quote-left"></i>Pelayanannya sangat nyaman, dan mendukung saran untuk waktu booking ditambah lagi di luar waktu weekend.<i class="fa-solid fa-quote-right"></i></p>
-                                <h2>Josepri Padang</h2>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-
-                        <div class="testimonials-col">
-                            <img src="asset/tim1.jpeg" alt="">
-                            <div>
-                                <p><i class="fa-solid fa-quote-left"></i>Pengalamam yang sangat berharga bisa berpetualang dengan @telusurlangkah menikmati wisata alam bumi pertiwi yang sangat memanjakan mata.<i class="fa-solid fa-quote-right"></i></p>
-                                <h2>Evanson Sihotang</h2>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                        <div class="testimonials-col">
-                            <img src="asset/tim2.jpeg" alt="">
-                            <div>
-                                <p><i class="fa-solid fa-quote-left"></i>Sangat membantu untuk mendapatkan pengalaman liburan yang sangat puas dengan menjelejahi spot wisata yang tak terduga.<i class="fa-solid fa-quote-right"></i></p>
-                                <h2>Muhammad Rizky</h2>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                                <i class="fa fa-star"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </div>
-        </section>    
     </div>    
+    <!-- AKHIR IMAGE SLIDER -->
+    <!-- -------------------------------------------------------------------------------------------- -->
 
-         <!-- Footer -->
-         <footer>
-            <div class="layar-dalam">
-                <div>
-                    <h5>Info</h5>
-                    Dapatkan Info lebih lanjut mengenanai Telusur Langkah di Sosial Media Kami. <br>
-                    <a href="https://www.instagram.com/telusurlangkah/"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/telusurlangkah/"><i class="fa-brands fa-facebook"></i></a>
-                    <i class="fa-brands fa-twitter"></i>
-                </div>
-                <div>
-                    <h5>Contact</h5>
-                    Anda Dapat Menghubungi kami via kontak dibawah ini <br>
-                    <i class="fa-brands fa-whatsapp"></i>: +0822 5939 4034
-                </div>
-                <div>
-                    <h5>Help</h5>
-                    Kunjungi informasi lebih lanjut mengenai Sumatera Utara di <a href="https://www.sumutprov.go.id">Sumutprov</a>
-                </div>
+    <!-- PROMO SECTION -->
+
+    <!-- <div class="promo">
+      <div class="judul"><h1>Promo Bulanan</h1></div>
+      <div class="sub-promo">
+        <div class="promo-gbr">
+          <img src="img/promo17an.jpeg" alt="promo">
+        </div>
+        <div class="promo-text">
+          <div class="promo-h4"><h4>Promo Trip</h4></div>
+          <p class="promo-tgl">Pulau Pandang dan Salahnamo, <br> 22 juli - 24 juli 2022</p> <br>
+          <a href="#" class="cta-btn">Booking Now</a>
+        </div>
+      </div>
+    </div> -->
+    <div class="containers">
+        <div class="promo-container">
+          <div class="pro-col">
+            <h1>Promo Bulan Ini</h1>
+            <div class="promos">
+              <div class="promo-img">
+                  <img src="img/promo17an.jpeg" alt="">
+              </div>
+              <div class="promo-info">
+                  <p>Promo Trip Kemerdekaan</p>
+                  <h3>Pulau Pandang Dan Salah Namo</h3>
+                  <p>Individu atau Kelompok / Berangkat Sabtu-Minggu / 4 Destinasi</p>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <div class="promo-price">
+                      <p>Diupdate tgl 1 Agustus 2022</p>
+                      <h4>Rp 279.000 <span>/ Pax</span></h4>
+                      <a href="#" class="cta-btn">Booking Now</a>
+                  </div>
+              </div>
+          </div>
+        </div>  
+
+        <div class="right-col">
+          <div class="sidebar">
+              <h2>Pendaftaran</h2> <br>
+              <div class="filter">
+                  <input type="checkbox"><p>Menerima Pendaftaran Perorangan atau kelompok</p>
+              </div>
+              <div class="filter">
+                  <input type="checkbox"><p>Pendaftaran selambatnya -3H sebelum keberangkatan</p>
+              </div>
+              <div class="filter">
+                  <input type="checkbox"><p>DP 50% dari total keseluruhan dan pelunasan pada hari H sebelum keberangkatan</p>
+              </div>
+             
+              <div class="filter">
+                  <input type="checkbox"><p>Untuk keberangkatan diluar meeting point hubungi pusat informasi</p>
+              </div>
+          </div>
+      </div>
+  </div>   
+      </div>
+
+    <div class="text-pro">
+      <p>Kami hadir memberikan layanan wisata untuk Anda yang ingin menghabiskan waktu liburan dan healling yang berkesan, dengan menyediakan pilihan destinasi yang sangat indah dan memukau mata dan pastinya fasilitas lengkap dan memadai untuk memastikan kepuasan, kenyamanan, dan keamanan selama trip, dan mendapatkan pengalaman wisata berharga yang tak terlupakan.</p> <br> <br>
+    </div>    
+    <!-- AKHIR PROMO -->
+    <!-- --------------------------------------------------------------------------------------------- -->
+    <!-- MERCENDISE -->
+    <div class="merc">
+      <h2>Merchandise Unik Telusur Langkah</h2>
+      <div class="slider">
+          <div class="slide-track">
+              <!-- 9 slides -->
+              <div class="slide">
+                  <img src="img/merc1.png" alt="merc1">
+              </div>
+              <div class="slide">
+                  <img src="img/blank.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/merc2.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/blank.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/merc1.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/blank.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/merc2.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/blank.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/merc1.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/blank.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/merc2.png" alt="">
+              </div>
+              <div class="slide">
+                  <img src="img/blank.png" alt="">
+              </div>
+              <div class="slide">
+                <img src="img/merc1.png" alt="">
             </div>
+          </div>
+      </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- TRENDING PLACE -->
+    <h2 style="text-align: center;">Trending Places</h2>
+    <div class="trending">
+        <div>
+            <img src="img/12.JPG" alt="">
+            <h3>Pulau Banyak</h3>
+        </div>
+        <div>
+            <img src="img/13.JPG" alt="">
+            <h3>Pulau Kalimantung</h3>
+        </div>
+        <div>
+            <img src="img/15.jpg" alt="">
+            <h3>Pulau Samosir</h3>
+        </div>
+        <div>
+            <img src="img/11.jpg" alt="">
+            <h3>Pulau Pandang</h3>
+        </div>
+    </div>
+    <!-- ----------------------------------------------------------------------------------- -->
+    <!-- ARTICLE -->
+    <section class="facilities">
+      <h1>Artikel Terkait Destinasi</h1>
+      <p>Artikel terkait destinasi wisata yang kami tawarkan yang layak untuk dikunjungi. <br> *Artikel ini bersal dari page Website lain.</p>
 
-            <!-- copyright -->
-            <div class="layar-dalam">
-                <div class="copyright">
-                    &copy : 2022 Telusur Langkah for Promotion.
-                </div>
+      <div class="row">
+          <div class="facilities-col">
+              <img src="img/samsr1.jpg" alt="article">
+                  <h3>Pulau Samosir, Pesona Alam Tengah Danau</h3>
+                  <p>Keindahan pemandangan di Pulau Samosir Sumatera Utara akan membius Anda sejenak. Bagaimana tidak? Sebuah pulau vulkanik nan indah terbentang di tengah Danau Toba, yang juga merupakan danau terluas di Asia Tenggara.<br> <a href="https://www.gosumatra.com/pulau-samosir/" style="text-decoration: none; color: blue; font-weight: 200;">SELENGKAPNYA...</a><br> <br><hr>
+                    25 juli - 4 Komentar</p>
+          </div>
+
+          <div class="facilities-col">
+              <img src="img/pandang2.jpg" alt="playground">
+                  <h3>WisataPulau Pandang, Banyak Hal Asyik Bisa Dinikmati Di Sini!</h3>
+                  <p>Pulau Pandang menyimpan panorama alam yang memukau di bawah lautnya. Di sana kamu dapat menyaksikan berbagai macam terumbu karang yang cantik mempesona.<br> <a href="https://tourtoba.com/pulau-pandang/" style="text-decoration: none; color: blue; font-weight: 200;">SELENGKAPNYA...</a> <br> <br><hr>
+                    12 Agustus - 8 Komentar</p>
+          </div>
+
+          <div class="facilities-col">
+              <img src="img/5.JPG" alt="">
+                  <h3>Pulau Mursala, Destinasi Wisata Cantik Lokasi Film King Kong</h3>
+                  <p>Destinasi wisata alam cantik Pulau Mursala memang sudah terkenal, bagaimana tidak menjadi terkenal karena pernah digunakan sebagai lokasi syuting Film King Kong,<br> <a href="https://siajun.com/pulau-mursala/" style="text-decoration: none; color: blue; font-weight: 200;">SELENGKAPNYA...</a> <br> <br><hr>
+                    14 Desember 2021 - 12 Komentar</p>
+          </div>
+      </div>
+      <div class="row">
+        <div class="facilities-col">
+            <img src="img/banyak2.jpg" alt="pulau banyak">
+                <h3>PULAU BANYAK Wisata Bahari Lengkap Di Aceh Singkil</h3>
+                <p>Pesona kawasan kepulauan ini semakin mencuat di dunia pariwisata. Tidak sedikit yang menyandingkan panorama laut biru-kehijauan dan pasir putihnya dengan Maladewa. Mari intip seperti apa pesona pulau di ujung barat Indonesia ini. <br> <a href="https://travelspromo.com/htm-wisata/pulau-banyak-aceh-singkil/" style="text-decoration: none; color: blue; font-weight: 200;">SELENGKAPNYA...</a> <br> <br><hr>
+                  26 juli - 3 Komentar</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="img/kalimantung2.png" alt="playground">
+                <h3>Pulau Kalimantung di Sumatera Utara, Pulau Indah Dengan Air Terjun Langsung Ke Laut</h3>
+                <p>Banyak orang mengira hanya air terjun Mursala yang ada di Kabupaten ini. Nyatanya keindahan pulau ini tidak kalah memukau. Tidak heran jika destinasi ini menjadi salah satu destinasi yang paling digandrungi. <br> <a href="https://www.tempatwisata.pro/pulau/Pulau-Kalimantung-tapanuli-Tengah" style="text-decoration: none; color: blue; font-weight: 200;">SELENGKAPNYA...</a> <br> <br><hr>
+                  25 juli - 6 Komentar</p>
+        </div>
+
+        <div class="facilities-col">
+            <img src="img/banyak3.jpg" alt="">
+                <h3>Pulau Banyak di Aceh, Pulau Dengan Gugusan Pulau Kecil Yang Eksotis</h3>
+                <p>Tidak hanya menawarkan keindahan alam, di tempat ini pengunjung juga bisa melakukan berbagai aktivitas seru. Keindahan bahari di pulau ini memang menarik perhatian sehingga banyak yang rela melakukan perjalanan selama berjam-jam.<br> <a href="https://www.tempatwisata.pro/pulau/Pulau-Banyak" style="text-decoration: none; color: blue; font-weight: 200;">SELENGKAPNYA...</a> <br> <br><hr>
+                  15 Maret - 10 Komentar</p>
+        </div>
+    </div>
+  </section>
+  <!-- -------------------------------------------------------------------------- -->
+
+  <!-- TEAM SECTION -->
+  <div class="cta">
+    <h3>Our Profesional Team</h3>
+    <p style="color: aliceblue;">Team Kami adalah orang-orang berpengalaman dengan pengetahuan wisata yang terjamin dan siap memberikan pelayanan terbaik untuk wisatawan.</p>
+    <a href="team.html" class="cta-btn">Baca Selengkapnya</a>
+</div>
+
+<!-- TRAVELLERS STORY -->
+<!--image slider start-->
+<section id="slider">
+  <div class="containerstr">
+    <div class="subcontainer">
+      <div class="slider-wrapper">
+        <div>
+          <h2 style="text-align: center;">Travellers Story</h2>
+        </div> <br>
+        <div class="my-slider">
+          <div>
+            <div class="slide-str">
+              <div class="slide-img img-1">
+                <a href="destinasi.html">Lihat Destinasi</a>
+              </div>
+              <br>
+              <div>
+                <h3>Pulau Samosir</h3>
+                <p>"Menjelajah keindahan samosir dan menemukan spot wisata tak terduga"</p>
+              </div>
             </div>
-        </footer>
-     
-    <!-- JQUERY LINK  -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/javascript.js"></script>
+          </div>
+          <div>
+            <div class="slide-str">
+              <div class="slide-img img-2">
+                <a href="destinasi.html">Lihat Destinasi</a>
+              </div>
+              <br>
+              <div>
+                <h3>Pulau Pandang</h3>
+                <p>"Aku tidak lagi sama setelah melihat keindahan senja di belahan bumi sumatera"</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slide-str">
+              <div class="slide-img img-3">
+                <a href="destinasi.html">Lihat Destinasi</a>
+              </div>
+              <br>
+              <div>
+                <h3>Pulau Kalimantung</h3>
+                <p>"Terkadang kita akan menemukan keluarga baru selama trip"</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slide-str">
+              <div class="slide-img img-4">
+                <a href="destinasi.html">Lihat Destinasi</a>
+              </div>
+              <br>
+              <div>
+                <h3>Pulau Banyak</h3>
+                <p>"Eksplor keindahan wisata bahari dengan tim"</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="slide-str">
+              <div class="slide-img img-5">
+                <a href="destinasi.html">Lihat Destinasi</a>
+              </div>
+              <br>
+              <div>
+                <h3>Pulau Mursala</h3>
+                <p>"Keindahan pemandangan sunset seakan lupa akan suasana kehidupan di kota"</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--image slider end-->
+<!-- ----------------------------------------------------------------------------- -->
+ <!-- SUPPORT SECTION -->
+ <section class="abuabu">
+  <div class="layar-dalam support">
+      <div>
+          <img src="asset/matahari.png" />
+          <h6>Siap Disetiap Kondisi</h6>
+          <p>
+              Siap Melayani Pelancong di setiap kondisi, sesuai dengan permintaan, dan menjelajah wisata alam seperti sungai, air terjun, dan daerah pegunungan.
+          </p>
+      </div>
+      <div>
+          <img src="asset/compas.png" />
+          <h6>Guide Berpengalaman</h6>
+          <p>
+              Pemandu wisata berpengalaman dengan pengetahuan tentang destinasi sehingga memastikan pelancong puas, dengan peralatan dan prasarana pendukung yang lengkap.
+          </p>
+      </div>
+      <div>
+          <img src="asset/bag.webp" />
+          <h6>Prasarana yang Lengkap</h6>
+          <p>
+              Memastikan kelancaran trip dengan peralatan dan prasarana pendukung yang lengkap untuk membuat pelancong mendapatkan pengalaman liburan yang nyaman dan aman.
+          </p>
+      </div>                    
+  </div>
+</section>
+<!-- ---------------------------------------------------------------------------------- -->
+  <!-- Footer -->
+  <footer>
+    <div class="layar-dalam">
+        <div>
+          <h5>Telusur Langkah</h5>
+            <img src="img/newlogo.png" alt="" style="width: 100px;"> <br> <br>
+            <p>Eksplor Gunung, Hutan, dan Laut Sumatera.</p> <br> <p>Kebijakan Privacy</p>
+        </div>
+        <div>
+          <h5>----- Follow Us -----</h5>
+          <a href="https://www.instagram.com/telusurlangkah/"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.facebook.com/telusurlangkah/"><i class="fa-brands fa-facebook"></i></a>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
+        <div>
+            <h5>Sekretariat</h5>
+            <img src="img/home2.png" style="width: 90px;" alt=""> <br> <br>
+            <p>Jl. Bunga Aster, Gg. Pelita, Pasar 6, Padang Bulan, Medan Selayang</p> <br>
+            <p>Medan - Indonesia 20117</p>
+        </div>
+    </div>
 
-    <!-- js for quotes -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- copyright -->
+    <div class="layar-dalam">
+        <div class="copyright">
+            <p>&copy : 2022 Telusur Langkah.</p>
+        </div>
+    </div>
+</footer>
+  <!-- ----------------------------------------------------------------------------- -->
+      <script type="text/javascript">
+      var slides = document.querySelectorAll('.slides');
+      var btns = document.querySelectorAll('.btn');
+      let currentSlide = 1;
+  
+      // Javascript for image slider manual navigation
+      var manualNav = function(manual){
+        slides.forEach((slides) => {
+          slide.classList.remove('active');
+  
+          btns.forEach((btn) => {
+            btn.classList.remove('active');
+          });
+        });
+  
+        slides[manual].classList.add('active');
+        btns[manual].classList.add('active');
+      }
+  
+      btns.forEach((btn, i) => {
+        btn.addEventListener("click", () => {
+          manualNav(i);
+          currentSlide = i;
+        });
+      });
+  
+      // Javascript for image slider autoplay navigation
+      var repeat = function(activeClass){
+        let active = document.getElementsByClassName('active');
+        let i = 1;
+  
+        var repeater = () => {
+          setTimeout(function(){
+            [...active].forEach((activeSlide) => {
+              activeSlide.classList.remove('active');
+            });
+  
+          slides[i].classList.add('active');
+          btns[i].classList.add('active');
+          i++;
+  
+          if(slides.length == i){
+            i = 0;
+          }
+          if(i >= slides.length){
+            return;
+          }
+          repeater();
+        }, 10000);
+        }
+        repeater();
+      }
+      repeat();
+      </script>
+    <!-- JS For Toggle Menu -->
     <script>
-      var typed = new Typed(".auto-input", {
-        strings: ["If you're","already a front-end developer", "well pretend", "you're also wearing a pirate hat."],
-        typeSpeed: 100,
-        backSpeed: 100,
-        loop: true,
+      $('.icon').click(function(){
+        $('span').toggleClass("cancel");
       });
     </script>
-
-    <!-- js for toggle menu -->
-    <script>
-        var navBar = document.getElementById("navBar");
-
-        function togglebtn(){
-            navBar.classList.toggle("hidemenu");
-        }
-    </script>
-
-<script src="css/script.js"></script>
-</body>
+    <!-- ------------------------------------------------------ -->
+  <script src="js/script2.js"></script>
+  </body>
 </html>
